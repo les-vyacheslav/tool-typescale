@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <div class="app-frame">
+
+            <div class="sidebar">
+                <div class="form-group">
+                    <div class="form-label">Base Size</div>
+                    <input id="formInputBaseSize" class="form-control form-control--full-width" type="number" name="tc_base_size" value="16" min="1">
+                </div>
+                <div class="form-group">
+                    <div class="form-label">Scale</div>
+                    <select id="formSelectScale" class="form-control form-control--full-width" type="text" name="tc_scale">
+                        <option value="1.067">1.067 – Minor Second</option>
+                        <option value="1.125">1.125 – Major Second</option>
+                        <option value="1.200">1.200 – Minor Third</option>
+                        <option value="1.250" selected>1.250 – Major Third</option>
+                        <option value="1.333">1.333 – Perfect Fourth</option>
+                        <option value="1.414">1.414 – Augmented Fourth</option>
+                        <option value="1.500">1.500 – Perfect Fifth</option>
+                        <option value="1.618">1.618 – Golden Ratio</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="form-label">Count</div>
+                    <input id="formInputCount" class="form-control form-control--full-width" type="number" name="tc_base_count" value="8" min="1">
+                </div>
+                <div class="form-group">
+                    <button id="formButtonReset" class="btn btn-primary btn--full-width" type="button" name="tc_reset">Reset All</button>
+                </div>
+            </div>
+
+            <div class="main">
+                <ul id="tc_list" class="list" data-count="8"></ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="App.js"></script>
+</body>
+</html>
